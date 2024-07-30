@@ -33,7 +33,7 @@ def plot(x, y, scale='linear', title=None, xlabel=None, ylabel=None, label=None)
     if ylabel is not(None):
         plt.ylabel(ylabel)
         
-def histogram(x, bins=[-3, -2, -1, 0, 1, 2, 3]): # здесь подобраны наиболее удобные бины для гистограмм в практике по фотометрии
+def histogram(x, bins=10): # здесь подобраны наиболее удобные бины для гистограмм в практике по фотометрии
     plt.hist(x, bins, edgecolor='black') # edgecolor рисует границу у прямоугольников в гистограмме
 
 def spectral_ind(wavelength, flux):
